@@ -1,16 +1,14 @@
 # RustSBI K210 Platform Support Package
 
-
 This platform support package contains more platform compatibility functions, allowing the K210 to run the 1.12 version of the standard operating system kernel.
 
 ## binary package download
 
-
-See the release page: [here](https://github.com/rustsbi/rustsbi-k210/releases)。
+See the release page: [here](https://github.com/rustsbi/rustsbi-k210/releases)
 
 ## Instructions for use
 
-Please download first [ktool.py](https://github.com/loboris/ktool)，Placed in the `xtask` directory, that is, the file location is `xtask/ktool.py`.
+Please download first [ktool.py](https://github.com/loboris/ktool), Placed in the `xtask` directory, that is, the file location is `xtask/ktool.py`.
 
 Run the following commands to run the code directly on the target board.
 
