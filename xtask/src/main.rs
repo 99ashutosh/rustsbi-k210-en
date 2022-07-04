@@ -115,6 +115,7 @@ fn xtask_run_k210(xtask_env: &XtaskEnv, port: &str) {
         .current_dir(project_root().join("xtask"))
         .arg("ktool.py")
         .args(&["--port", port])
+        .args(&["-B", "bit_mic"])
         .args(&["--baudrate", "1500000"]) // todo: configurate baudrate
         .arg("--terminal")
         .arg(dist_dir(xtask_env).join("k210-fused.bin"))
