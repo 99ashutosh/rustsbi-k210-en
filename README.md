@@ -6,7 +6,7 @@ This platform support package contains more platform compatibility functions, al
 ## binary package download
 
 
-See the release page: [here] (https://github.com/rustsbi/rustsbi-k210/releases)。
+See the release page: [here](https://github.com/rustsbi/rustsbi-k210/releases)。
 
 ## Instructions for use
 
