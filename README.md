@@ -1,39 +1,40 @@
-# RustSBI K210 平台支持包
+# RustSBI K210 Platform Support Package
 
-这个平台支持包包含较多的平台兼容功能，允许在K210上运行1.12版本标准的操作系统内核。
 
-## 二进制包下载
+This platform support package contains more platform compatibility functions, allowing the K210 to run the 1.12 version of the standard operating system kernel.
 
-请参阅发行页面：[这里](https://github.com/rustsbi/rustsbi-k210/releases)。
+## binary package download
 
-## 使用说明
 
-请先下载[ktool.py](https://github.com/loboris/ktool)，放置在`xtask`目录下，即文件位置为`xtask/ktool.py`。
+See the release page: [here] (https://github.com/rustsbi/rustsbi-k210/releases)。
 
-运行以下指令，来直接在目标开发板运行代码。
+## Instructions for use
+
+Please download first [ktool.py](https://github.com/loboris/ktool)，Placed in the `xtask` directory, that is, the file location is `xtask/ktool.py`.
+
+Run the following commands to run the code directly on the target board.
 
 ```
 cargo k210
 ```
 
-这个平台支持包会启动位于`0x80020000`的操作系统内核，并在`a1`寄存器提供一个简单的设备树。
-操作系统内核应当使用《RISC-V指令集架构 第二卷：特权级指令》的1.12版本，而非芯片支持的1.9.1版本。
+This platform support package starts the OS kernel at `0x80020000` and provides a simple device tree in the `a1` register.
+The operating system kernel should use version 1.12 of "RISC-V Instruction Set Architecture Volume II: Privileged Instructions" instead of version 1.9.1 supported by the chip.
 
-## 兼容性使用文档
+## Compatibility documentation
 
-稍后放出。包括`sfence.vma`指令、页异常编号转发等等。
+Release later. Includes the `sfence.vma` directive, page exception number forwarding, and more.
+## Try it now
 
-## 立即体验
-
-先下载代码，然后直接运行内核测试：
+Download the code first, then run the kernel tests directly:
 
 ```
 cargo test
 ```
 
-## 版权声明
+## Copyright Notice
 
-项目的测试框架使用了[KTool](https://github.com/loboris/ktool)。这个项目使用Apache 2.0协议开源，感谢KTool项目和它的维护者们！
+The test framework of the project uses [KTool](https://github.com/loboris/ktool). This project is open sourced using the Apache 2.0 license, thanks to the KTool project and its maintainers!
 
 Reference implementaion K210 includes Kendryte K210 DTS file from Western Digital, this file is
 (C) Western Digital Corporation or its affiliates under BSD-2-Clause license.
